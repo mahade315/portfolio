@@ -93,15 +93,15 @@ const About = () => {
                     <div className={`p-3 rounded-full bg-primary/10 ${item.color}`}>
                       {item.icon === "tau-logo" ? (
                         <img
-                          src={publicAssetUrl("tau.svg")}
+                          src={publicAssetUrl("tau.png")}
                           alt="Tampere University"
                           className="h-6 w-auto max-w-[140px] object-contain"
                         />
                       ) : item.icon === "gpt-lab-logo" ? (
                         <img
-                          src={publicAssetUrl("gptlab-logo.svg")}
+                          src={publicAssetUrl("GptLablogo.png")}
                           alt="GPT Lab"
-                          className="h-6 w-6 object-contain"
+                          className="h-6 w-auto max-w-[140px] object-contain"
                         />
                       ) : (
                         <item.icon className="w-6 h-6" />
