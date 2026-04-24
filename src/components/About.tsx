@@ -58,7 +58,7 @@ const About = () => {
             <Card className="p-8 backdrop-blur-sm bg-card/80 border-primary/10 h-full">
               <h3 className="text-2xl font-bold gradient-text mb-6">My Journey</h3>
 
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
                 <p>
                   I'm <span className="text-foreground font-semibold">Md Mahade Hasan</span> (Mahade), a Doctoral Researcher in Computing Sciences at 
                   Tampere University. I work on <span className="text-foreground font-semibold">Generative AI</span> with a focus on <span className="text-foreground font-semibold">agentic systems</span> and 
