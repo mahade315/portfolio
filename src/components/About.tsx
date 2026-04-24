@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Briefcase, BookOpen, Brain, Newspaper } from "lucide-react";
 import publicationsData from "@/lib/publications";
+import { publicAssetUrl } from "@/lib/publicAssetUrl";
 
 const About = () => {
   const latestPublication = [...publicationsData].sort((a, b) => Number(b.year) - Number(a.year))[0];
@@ -92,15 +93,15 @@ const About = () => {
                     <div className={`p-3 rounded-full bg-primary/10 ${item.color}`}>
                       {item.icon === "tau-logo" ? (
                         <img
-                          src="https://upload.wikimedia.org/wikipedia/commons/5/52/Tampere_University_logo_2019.svg"
+                          src={publicAssetUrl("tau.svg")}
                           alt="Tampere University"
-                          className="w-6 h-6"
+                          className="h-6 w-auto max-w-[140px] object-contain"
                         />
                       ) : item.icon === "gpt-lab-logo" ? (
                         <img
-                          src="https://gptlab.cs.tuni.fi/images/logo.png"
+                          src={publicAssetUrl("gptlab-logo.svg")}
                           alt="GPT Lab"
-                          className="w-6 h-6"
+                          className="h-6 w-6 object-contain"
                         />
                       ) : (
                         <item.icon className="w-6 h-6" />
