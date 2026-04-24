@@ -4,25 +4,26 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Github, FileText, Send, ExternalLink, CheckCircle, AlertCircle } from "lucide-react";
 import { useState, useEffect } from "react";
+import { publicAssetUrl } from "@/lib/publicAssetUrl";
 
 // Custom ORCID icon component
 const OrcidIcon = ({ className }: { className?: string }) => (
-  <img src="/ORCID_iD.svg.png" alt="ORCID" className={className} />
+  <img src={publicAssetUrl("ORCID_iD.svg.png")} alt="ORCID" className={className} />
 );
 
 // Custom Google Scholar icon component
 const GoogleScholarIcon = ({ className }: { className?: string }) => (
-  <img src="/Google_Scholar_logo.svg" alt="Google Scholar" className={className} />
+  <img src={publicAssetUrl("Google_Scholar_logo.svg")} alt="Google Scholar" className={className} />
 );
 
 // Custom LinkedIn icon component
 const LinkedInIcon = ({ className }: { className?: string }) => (
-  <img src="/LinkedIn.svg" alt="LinkedIn" className={className} />
+  <img src={publicAssetUrl("LinkedIn.svg")} alt="LinkedIn" className={className} />
 );
 
 // Custom GitHub icon component
 const GitHubIcon = ({ className }: { className?: string }) => (
-  <img src="/github-mark.svg" alt="GitHub" className={`${className || ''} dark:invert`} />
+  <img src={publicAssetUrl("github-mark.svg")} alt="GitHub" className={`${className || ''} dark:invert`} />
 );
 
 const Contact = () => {

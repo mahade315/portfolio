@@ -91,9 +91,17 @@ const About = () => {
                   <div className="flex items-start gap-4">
                     <div className={`p-3 rounded-full bg-primary/10 ${item.color}`}>
                       {item.icon === "tau-logo" ? (
-                        <img src="/tau.png" alt="Tampere University" className="w-6 h-6 dark:invert" />
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/5/52/Tampere_University_logo_2019.svg"
+                          alt="Tampere University"
+                          className="w-6 h-6"
+                        />
                       ) : item.icon === "gpt-lab-logo" ? (
-                        <img src="/GptLablogo.png" alt="GPT Lab" className="w-6 h-6" />
+                        <img
+                          src="https://gptlab.cs.tuni.fi/images/logo.png"
+                          alt="GPT Lab"
+                          className="w-6 h-6"
+                        />
                       ) : (
                         <item.icon className="w-6 h-6" />
                       )}

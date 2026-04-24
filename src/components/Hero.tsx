@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone, Linkedin, Github, FileText, GraduationCap } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Textogram from "@/components/Textogram";
+import { publicAssetUrl } from "@/lib/publicAssetUrl";
 
 const Hero = () => {
   return (
@@ -26,7 +27,7 @@ const Hero = () => {
               <div className="relative w-56 h-56 md:w-72 md:h-72 group">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-accent opacity-50 blur-xl animate-pulse" />
                 <img
-                  src="/my_pp.jpeg"
+                  src={publicAssetUrl("my_pp.jpeg")}
                   alt="Profile photo of Md Mahade Hasan"
                   className="relative w-full h-full rounded-full border-4 border-primary/20 shadow-2xl object-cover transition-all duration-300 ease-out group-hover:scale-105 group-hover:rotate-1 group-hover:ring-4 group-hover:ring-primary/40"
                 />
@@ -44,7 +45,7 @@ const Hero = () => {
                         aria-label="ORCID"
                         className="w-10 h-10 flex items-center justify-center rounded-full border border-primary/20 text-muted-foreground hover:text-accent hover:border-accent transition-colors"
                       >
-                        <img src="/ORCID_iD.svg.png" alt="ORCID" className="w-5 h-5" />
+                        <img src={publicAssetUrl("ORCID_iD.svg.png")} alt="ORCID" className="w-5 h-5" />
                       </a>
                     </TooltipTrigger>
                     <TooltipContent side="top">ORCID</TooltipContent>
@@ -59,7 +60,7 @@ const Hero = () => {
                         aria-label="Google Scholar"
                         className="w-10 h-10 flex items-center justify-center rounded-full border border-primary/20 text-muted-foreground hover:text-accent hover:border-accent transition-colors"
                       >
-                        <img src="/Google_Scholar_logo.svg" alt="Google Scholar" className="w-5 h-5" />
+                        <img src={publicAssetUrl("Google_Scholar_logo.svg")} alt="Google Scholar" className="w-5 h-5" />
                       </a>
                     </TooltipTrigger>
                     <TooltipContent side="top">Google Scholar</TooltipContent>
@@ -74,7 +75,7 @@ const Hero = () => {
                         aria-label="LinkedIn"
                         className="w-10 h-10 flex items-center justify-center rounded-full border border-primary/20 text-muted-foreground hover:text-accent hover:border-accent transition-colors"
                       >
-                        <img src="/LinkedIn.svg" alt="LinkedIn" className="w-5 h-5" />
+                        <img src={publicAssetUrl("LinkedIn.svg")} alt="LinkedIn" className="w-5 h-5" />
                       </a>
                     </TooltipTrigger>
                     <TooltipContent side="top">LinkedIn</TooltipContent>
@@ -89,7 +90,7 @@ const Hero = () => {
                         aria-label="GitHub"
                         className="w-10 h-10 flex items-center justify-center rounded-full border border-primary/20 text-muted-foreground hover:text-accent hover:border-accent transition-colors"
                       >
-                        <img src="/github-mark.svg" alt="GitHub" className="w-5 h-5 dark:invert" />
+                        <img src={publicAssetUrl("github-mark.svg")} alt="GitHub" className="w-5 h-5 dark:invert" />
                       </a>
                     </TooltipTrigger>
                     <TooltipContent side="top">GitHub</TooltipContent>
