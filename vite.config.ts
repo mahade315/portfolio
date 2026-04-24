@@ -4,7 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/mahade315.github.io/",
+  // User site: https://mahade315.github.io/ is served from "/", not "/repo-name/"
+  base: "/",
   server: {
     host: "::",
     port: 8080,
